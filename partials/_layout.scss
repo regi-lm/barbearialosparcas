@@ -269,13 +269,17 @@
     color: $white-normal;
 }
 
+.footer img {
+    width: 450px;
+}
+
 @media screen and (max-width: 768px) {
     .footer p {
         font-size: 12px;
     }
 
     .footer img {
-        width: 250px;
+        width: 300px;
     }
 }
 
