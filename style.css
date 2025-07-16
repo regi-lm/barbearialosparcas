@@ -252,7 +252,7 @@ i {
   text-align: center;
   max-width: 780px;
 }
-
+/*
 .haircuts {
   display: flex;
   flex-direction: column;
@@ -260,8 +260,8 @@ i {
   align-items: center;
   gap: 16px;
   padding: 0 44px 34px 44px;
-}
-
+}*/
+/*
 .haircut {
   flex: 1;
   display: flex;
@@ -270,10 +270,38 @@ i {
   border-radius: 6px;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0);
   overflow: hidden;
+}*/
+
+.haircuts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* ajuste espaçamento conforme seu layout */
+  padding: 0 44px 34px 44px;
 }
+
+.haircut {
+  background: #fff; /* ou o fundo atual dos cards */
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  min-height: 350px; /* altura igual para todos */
+}
+/*
 .haircut img {
   width: 100%;
   max-width: 354px;
+  transition: transform 0.2s;
+}*/
+.haircut img {
+  width: 100%;
+  height: 300px; /* ou ajuste conforme desejado */
+  object-fit: cover;
+  display: block;
   transition: transform 0.2s;
 }
 
@@ -299,7 +327,7 @@ i {
   border: 0;
   cursor: default;
 }
-
+/*
 @media screen and (max-width: 768px) {
   .haircuts {
     flex-direction: column;
@@ -307,7 +335,26 @@ i {
   .haircut img {
     max-width: 740px;
   }
+}*/
+
+@media (max-width: 1200px) {
+  .haircuts {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
+@media (max-width: 900px) {
+  .haircuts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .haircuts {
+    grid-template-columns: 1fr;
+  }
+}
+
 .services-footer {
   display: flex;
   flex-direction: column;
