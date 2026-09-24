@@ -1,0 +1,21 @@
+.about{padding:7rem 4vw 8rem;background:linear-gradient(180deg,#111,#151515)}
+.barber-tools{display:flex;align-items:center;gap:1rem;margin:4rem 0 2.2rem;color:var(--accent)}
+.barber-tools i{height:1px;flex:1;background:linear-gradient(90deg,var(--line),var(--accent),var(--line))}.barber-tools span{font-size:22px}.barber-tools b{font:400 12px Anton,sans-serif;letter-spacing:.14em}
+.barbers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
+.barber-card{min-width:0;background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;transition:transform .35s,border-color .35s}
+.barber-card:hover{transform:translateY(-7px);border-color:rgba(249,115,22,.55)}
+.cut-carousel{height:220px;overflow:hidden;border-bottom:3px solid var(--accent)}
+.cut-carousel__track{display:flex;width:300%;height:100%;animation:cuts-loop 22s linear infinite}
+.cut-carousel--reverse .cut-carousel__track{animation-direction:reverse;animation-duration:25s}
+.cut-carousel__track img{width:16.6667%;height:100%;flex:0 0 16.6667%;filter:saturate(.8);transition:filter .3s}
+.barber-card:hover .cut-carousel__track img{filter:saturate(1.1)}
+@keyframes cuts-loop{to{transform:translateX(-50%)}}
+.barber-card__body{display:grid;grid-template-columns:104px 1fr;gap:1.2rem;padding:1.2rem;align-items:center}
+.barber-card__portrait{width:104px;height:124px;filter:grayscale(.25)}
+.barber-card__info{position:relative;min-width:0}.barber-card__number{position:absolute;right:0;top:0;color:var(--accent);font:400 10px Anton,sans-serif;letter-spacing:.15em}
+.barber-card__info h3{font:400 clamp(2.1rem,3.5vw,3.8rem)/.9 Anton,sans-serif;margin:0;padding-right:26px}
+.barber-card__info p{color:var(--muted);font-size:11px;margin:.55rem 0 1rem}
+.social-links{display:flex;gap:.55rem}.social-links a{width:36px;height:36px;border:1px solid #464646;border-radius:50%;display:grid;place-items:center;transition:.25s}
+.social-links a:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+.social-links img{width:17px;height:17px}.social-links a:hover img{filter:brightness(0)}
+

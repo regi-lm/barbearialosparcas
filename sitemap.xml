@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://barbearialosparcas.vercel.app/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://barbearialosparcas.vercel.app/og-los-parcas.png</image:loc>
+    </image:image>
+    <image:image><image:loc>https://barbearialosparcas.vercel.app/images/servicos/corte-simples.png</image:loc></image:image>
+    <image:image><image:loc>https://barbearialosparcas.vercel.app/images/servicos/corte-navalhado.png</image:loc></image:image>
+    <image:image><image:loc>https://barbearialosparcas.vercel.app/images/servicos/corte-e-barba.png</image:loc></image:image>
+    <image:image><image:loc>https://barbearialosparcas.vercel.app/images/servicos/pigmentacao.png</image:loc></image:image>
+    <image:image><image:loc>https://barbearialosparcas.vercel.app/images/servicos/luzes.png</image:loc></image:image>
+    <image:image><image:loc>https://barbearialosparcas.vercel.app/images/servicos/reflexo.png</image:loc></image:image>
+    <image:image><image:loc>https://barbearialosparcas.vercel.app/images/servicos/colorimetria.png</image:loc></image:image>
+    <image:image><image:loc>https://barbearialosparcas.vercel.app/images/servicos/platinado.png</image:loc></image:image>
+  </url>
+</urlset>
